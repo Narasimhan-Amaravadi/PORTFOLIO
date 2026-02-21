@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.Narasimhan | Portfolio</title>
+
+<style>
+
+/* =======================
+   GLOBAL RESET
+======================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+/* =======================
+   NAVIGATION
+======================= */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#00adb5;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero{
+    height:90vh;
+    background:linear-gradient(to right,#1f1f1f,#000);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero span{
+    color:#00adb5;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#00adb5;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#008b91;
+}
+
+/* =======================
+   SECTIONS
+======================= */
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.bg-light{
+    background:#f5f5f5;
+}
+
+/* =======================
+   SKILLS
+======================= */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-6px);
+}
+
+/* =======================
+   PROJECTS
+======================= */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    padding:25px;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    text-align:left;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h3{
+    margin-bottom:10px;
+}
+
+.project-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 18px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.project-btn:hover{
+    background:#00adb5;
+}
+
+/* =======================
+   CONTACT
+======================= */
+#contact p{
+    margin:8px 0;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer{
+    padding:20px;
+    text-align:center;
+    background:#111;
+    color:white;
+    font-size:14px;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:10px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =======================
+     NAVBAR
+======================= -->
+<nav class="navbar">
+    <div class="logo">YourName</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- =======================
+     HERO
+======================= -->
+<section class="hero">
+    <div>
+        <h1>Hello, I'm <span>A.Narasimhan</span></h1>
+        <p>B.Tech Computer Science Student | Developer | Problem Solver</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
+
+<!-- =======================
+     ABOUT
+======================= -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Computer Science student focused on Data Structures,
+        Operating Systems, and Web Development. I enjoy solving algorithmic
+        challenges and building efficient systems.
+    </p>
+</section>
+
+<!-- =======================
+     SKILLS
+======================= -->
+<section id="skills" class="section bg-light">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">C / C++</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">HTML / CSS</div>
+        <div class="skill-card">Data Structures</div>
+    </div>
+</section>
+
+<!-- =======================
+     PROJECTS
+======================= -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>AI Sign Language Translator</h3>
+            <p>
+                ESP32-CAM based real-time gesture recognition system using
+                machine learning for speech-to-text assistance.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>JDBC MySQL Management System</h3>
+            <p>
+                Database-driven employee management system built using
+                Java and MySQL.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Algorithm Visualizer</h3>
+            <p>
+                Interactive visualization of sorting algorithms to analyze
+                time complexity and performance.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- =======================
+     CONTACT
+======================= -->
+<section id="contact" class="section bg-light">
+    <h2>Contact Me</h2>
+    <p>Email: narasimhanamaravadi7@gmail.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: www.linkedin.com/in/narasimhan-amaravadi-820411323</p>
+</section>
+
+<!-- =======================
+     FOOTER
+======================= -->
+<footer>
+    <p>© 2026 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
